@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+<body>
+    <h2>Admin Login</h2>
+    <form action="verify_admin.php" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="action">Select Action:</label><br>
+        <select id="action" name="action" required>
+            <option value="enter_grades">Enter Grades</option>
+            <option value="view_student_details">View Student Details</option>
+            <option value="enter_attendance">Enter Attendance</option>
+            <option value="view_attendance">View Attendance</option>
+        </select><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

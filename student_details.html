@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form</title>
+</head>
+<body>
+    <h2>Enter Student Details</h2>
+    <form action="submit_student.php" method="post">
+        <label for="student_name">Student Name:</label><br>
+        <input type="text" id="student_name" name="student_name" required><br><br>
+
+        <label for="uid">UID:</label><br>
+        <input type="number" id="uid" name="uid" required><br><br>
+
+        <label for="ph_no">Phone Number:</label><br>
+        <input type="text" id="ph_no" name="ph_no" required><br><br>
+
+        <label for="course_code">Course Code:</label><br>
+        <input type="text" id="course_code" name="course_code" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <label for="year">Year of Enrollment:</label><br>
+        <input type="number" id="year" name="year" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
